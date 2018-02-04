@@ -4,6 +4,7 @@ public class Squares_lib implements Squares_if{
 	double x[], y[];
 	double theta[] = new double[2];
 	double eta = 0.1;
+	private int a;
 	
 	public Squares_lib(double[] x, double[] y) {
 		this.x = x;
@@ -33,6 +34,11 @@ public class Squares_lib implements Squares_if{
 		theta[1] -= eta * object[1];
 		return theta;
      }
+	
+    public double getRx() {
+        // TODO Auto-generated method stub
+        return 2*this.a;
+    }
 
 		
 }
